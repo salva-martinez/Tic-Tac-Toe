@@ -1,0 +1,29 @@
+:root {
+    --purple: #b64ef2;
+    --winning-blocks: #2d414b;
+}
+
+.selectioner {
+    color: var(--purple);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container{
+    background-color: black;
+    height: 45rem;
+}
+
+.selectioner-cpu{
+    color: var(--purple);
+    display: flex;
+    justify-content: center;
+}
+
+.input-cpu{
+    display: flex;
+    margin-left: 4rem;
+    justify-content: center;
+}
