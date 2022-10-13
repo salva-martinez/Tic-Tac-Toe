@@ -39,7 +39,7 @@ h1 {
     margin-top: 40px;
 }
 
-.box {
+.cell {
     height: 100px;
     width: 100px;
     display: flex;
