@@ -1,8 +1,3 @@
-// const iniciarELJuego = document.getElementById();
-// const cells = document.querySelectorAll(".cell");
-// Array.from(cells)
-// const statusText = document.querySelector("#statusText");
-// const restartBtn = document.getElementById("restartBtn");
 const winConditions = [
     [0, 1, 2],
     [3, 4, 5],
@@ -17,15 +12,30 @@ const winConditions = [
 let interruptor = true;
 let jugador1pieza = "X";
 let jugador2pieza = "O";
-let cell = Array.from(document.getElementsByClassName("cell"))
+let cells = Array.from(document.getElementsByClassName("cell"))
+let turnos = 6;
 
-    cell.map((casilla) => {
-        casilla.addEventListener("click", ()=> {
-            // click ha representado el evento, la funcion anonima indicara que intrucciones debe seguir la app
-            if (casilla.innerHTML == "") {
-                casilla.innerHTML = (interruptor) ? jugador1pieza : jugador2pieza
+cells.map((cell) => {
+    cell.addEventListener("click", () => {
+
+        if (turnos <= 0) {
+            console.log("adios")
+        }
+        else {
+            console.log("hola");
+            if (cell.innerHTML == "") {
+                cell.innerHTML = (interruptor) ? jugador1pieza : jugador2pieza;
                 interruptor = !interruptor
-                // comprobamos en otra funcion si hay un ganador
+                turnos--;
+                console.log(turnos)
+
             }
-        })
-    });
+        }
+
+    })
+});
+
+
+
+
+
