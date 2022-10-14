@@ -13,22 +13,24 @@ let interruptor = true;
 let jugador1pieza = "X";
 let jugador2pieza = "O";
 let cells = Array.from(document.getElementsByClassName("cell"))
-let turnos = 6;
+let turnos = 12;
 
 cells.map((cell) => {
     cell.addEventListener("click", () => {
 
-        if (turnos <= 0) {
-            console.log("O")
-            if (cell.innerHTML = "X" || cell.innerHTML == "0") {
+        if (turnos < 7) {
+            console.log("turno de X")
+            if (cell.innerHTML == "X" && interruptor == true) {
+                cell.innerHTML = "";
+                turnos++;
+            } else if (cell.innerHTML == "O" && interruptor == false) {
                 cell.innerHTML = "";
                 turnos++;
             }
-
-
         }
+
         else {
-            console.log("X");
+            console.log("");
             if (cell.innerHTML == "") {
                 cell.innerHTML = (interruptor) ? jugador1pieza : jugador2pieza;
                 interruptor = !interruptor
