@@ -19,15 +19,20 @@ cells.map((cell) => {
     cell.addEventListener("click", () => {
 
         if (turnos <= 0) {
-            console.log("adios")
+            console.log("O")
+            if (cell.innerHTML = "X" || cell.innerHTML == "0") {
+                cell.innerHTML = "";
+                turnos++;
+            }
+
+
         }
         else {
-            console.log("hola");
+            console.log("X");
             if (cell.innerHTML == "") {
                 cell.innerHTML = (interruptor) ? jugador1pieza : jugador2pieza;
                 interruptor = !interruptor
                 turnos--;
-                console.log(turnos)
 
             }
         }
