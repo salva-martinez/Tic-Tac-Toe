@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -51,26 +51,22 @@ h1 {
     border-bottom: 2px solid;
     border-left: 2px solid;
     border-top: 2px solid;
-    color: wheat;
 }
 
 .box:nth-child(3n) {
     border-right: none;
 }
 
-.box:nth-child(6) ~ .box {
+.box:nth-child(6)~.box {
     border-bottom: none;
-} 
+}
 
 button {
     padding: 10px 20px;
     border-radius: 10px;
-    background-color:#b64ef2;
+    background-color: #b64ef2;
     color: black;
-    font-size: 18px;
-    transition: 200ms transform;
-    font-weight: 600;
-    margin-right: 10rem;
+    font-size: 20px;
 }
 
 button:hover {
@@ -78,12 +74,17 @@ button:hover {
     transform: translateY(-2px);
 }
 
-.start{
+.start {
     text-decoration: none;
     color: black;
 }
 
-p{
+p {
     display: flex;
     text-align: center;
+}
+
+.boton {
+    display: flex;
+    justify-content: center;
 }
