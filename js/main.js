@@ -22,23 +22,24 @@ cells.map((cell) => {
     cell.addEventListener("click", () => {
 
         if (turnos < 7) {
-            console.log("turno de X")
             if
                 (cell.innerHTML == "X" && interruptor == true) {
                 cell.innerHTML = "";
                 turnos++;
+                console.log(interruptor)
             } else if (cell.innerHTML == "O" && interruptor == false) {
                 cell.innerHTML = "";
                 turnos++;
+                console.log(interruptor)
             }
         }
 
         else {
-            console.log("");
             if (cell.innerHTML == "") {
                 cell.innerHTML = (interruptor) ? jugador1pieza : jugador2pieza;
                 interruptor = !interruptor
                 turnos--;
+                console.log(interruptor)
 
             }
         }
@@ -50,8 +51,7 @@ cells.map((cell) => {
 //reste game
 const restartbutton = document.getElementById("restartbtn")
 restartbutton.addEventListener("click", () => {
-    cellElements.forEach(cell => {
-        cell.classList.remove("X", "O")
+    gameState.forEach(cell => {
+        cell.innerHTML = ("");
     });
-    resultElement.innerHTML = ""
 });

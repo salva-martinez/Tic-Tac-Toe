@@ -1,21 +1,23 @@
-MIT License
+PROYECTO 3: TIC TAC TOE
 
-Copyright (c) 2022 salva-martinez
+DESCRIPCIÓN DEL PROYECTO:
+Primer proyecto sobre js: 
+He intentado intentado realizar el juego de tic tac toe,
+ya que parece juego sencillo, pero no, al menos para mi
+porque me ha resultado bastante dificil intentar implemenar
+la victora como que el turno del jugador ya ni hablo de la cpu.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+Pero la verdad lo que he aprendido del js ha servido para familiarizarme
+con los concepptos.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+UPDATES A REALIZAR:
+quiero implementar: victoria, turno de jugador, mensaje de victoria y 
+mejoras de estilos.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+HERRAMIENTAS:
+Para realizar el proyecto he utilizado:
+html5, css, js y bootstraps5.
+
+proyecto realizado por: Salva Martinez
+
+
