@@ -26,11 +26,9 @@ cells.map((cell) => {
                 (cell.innerHTML == "X" && interruptor == true) {
                 cell.innerHTML = "";
                 turnos++;
-                console.log(interruptor)
             } else if (cell.innerHTML == "O" && interruptor == false) {
                 cell.innerHTML = "";
                 turnos++;
-                console.log(interruptor)
             }
         }
 
