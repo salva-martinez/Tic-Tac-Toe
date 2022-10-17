@@ -37,7 +37,7 @@ body {
 }
 
 .cpuText {
-    color: orangered;
+    color: var(--purple);
     display: flex;
     justify-content: center;
     font-size: 2.5rem;
@@ -122,4 +122,13 @@ img {
     margin-top: -5rem;
     margin-left: 3.5rem;
     position: absolute;
+    color: var(--purple);
+}
+
+.text1::placeholder{
+    color: blue;
+}
+
+.text2::placeholder{
+    color: red;
 }

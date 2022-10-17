@@ -1,5 +1,3 @@
-const statusDisplay = document.querySelector('.result')
-const gameState = ['', '', '', '', '', '', '', '', ''];
 const winConditions = [
     [0, 1, 2],
     [3, 4, 5],
@@ -41,15 +39,42 @@ cells.map((cell) => {
 
             }
         }
+        ganar ()
 
     })
+
 });
 
-
-//reste game
 const restartbutton = document.getElementById("restartbtn")
 restartbutton.addEventListener("click", () => {
-    gameState.forEach(cell => {
-        cell.innerHTML = ("");
-    });
+    restart ();
 });
+
+const restart = () => {
+    cells.forEach(cell => {
+        cell.innerHTML = "";
+        turnos = 12;
+        interruptor = true;
+    });
+}
+
+const ganar = () => {
+    for (i = 0; i < winConditions.length; i++) {
+        let checks = winConditions[i];
+        let cell1 = cells[checks[0]].innerHTML;
+        let cell2 = cells[checks[1]].innerHTML;
+        let cell3 = cells[checks[2]].innerHTML;
+
+        if (cell1 == "" || cell2 == "" || cell3 == "") {
+
+        }
+        else if (cell1 == cell2 && cell2 == cell3) {
+            console.log("WINNER");
+            restart();
+            window.location.href = "../pages/winner.html"
+        };
+    };
+};
+
+
+

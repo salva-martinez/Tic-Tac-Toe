@@ -4,7 +4,6 @@
 }
 
 body {
-    color: var(--purple);
     background-color: black;
     font-family: 'Finger Paint', cursive;
 }
@@ -79,4 +78,32 @@ p {
 .boton {
     display: flex;
     justify-content: center;
+}
+
+.play-again-btn {
+    display: flex;
+    width: 5rem;
+    background-color: #b64ef2;
+    color: black;
+    text-decoration: none;
+    justify-content: center;
+}
+
+.footer-menu {
+    display: flex;
+    margin-top: 2rem;
+}
+
+.main-menu-btn {
+    display: flex;
+    width: 5rem;
+    background-color: #b64ef2;
+    color: black;
+    text-decoration: none;
+    justify-content: center;
+}
+
+footer {
+    margin-top: 36rem;
+    position: absolute;
 }
