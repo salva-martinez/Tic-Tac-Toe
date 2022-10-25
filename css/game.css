@@ -1,8 +1,7 @@
-body {
-    background-image:linear-gradient(rgba(47, 54, 64,0.80),rgba(53, 59, 72,1)),  url(https://media.istockphoto.com/photos/black-sand-dune-black-sand-beach-macro-photography-background-texture-picture-id1314229916?b=1&k=20&m=1314229916&s=170667a&w=0&h=rEnib5wKaUR7M3J_9uHHV2PKR2E1E-ODAEe4Oj8pG_I=);
-    background-repeat: no-repeat;
+:root {
+    --purple: #b64ef2;
+    --all: #2d414b;
 }
-
 
 h1 {
     font-size: 54px;
@@ -19,7 +18,7 @@ h1 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-image: linear-gradient(rgba(47, 54, 64,0.80),rgba(53, 59, 72,1)), url(https://c4.wallpaperflare.com/wallpaper/260/76/893/abstract-circuit-computer-detail-wallpaper-preview.jpg);
+    background-image: url(https://c4.wallpaperflare.com/wallpaper/260/76/893/abstract-circuit-computer-detail-wallpaper-preview.jpg);
     font-family: 'Times New Roman', Times, serif;
 }
 
@@ -49,8 +48,8 @@ button {
     display: flex;
     padding: 10px 20px;
     background: none;
-    color: white;
-    font-size: 20px;
+    color: yellowgreen;
+    font-size: larger;
     text-decoration: none;
     overflow: hidden;
     transition: 0.8s;
@@ -65,7 +64,7 @@ button:hover {
 
 .start {
     display: flex;
-    color: white;
+    color: black;
     text-decoration: none;
     border-radius: 2rem;
 }
@@ -75,17 +74,28 @@ p {
     text-align: center;
 }
 
+.play-again-btn {
+    display: flex;
+    width: 5rem;
+    color: yellowgreen;
+    text-decoration: none;
+    justify-content: center;
+}
+
 .footer-menu {
     display: flex;
     margin-top: 2rem;
 }
 
+.main-menu-btn {
+    display: flex;
+    width: 5rem;
+    color: yellowgreen;
+    text-decoration: none;
+    justify-content: center;
+}
+
 footer {
     margin-top: 36rem;
     position: absolute;
-}
-
-.boton {
-    display: flex;
-    margin-left: 7rem;
 }

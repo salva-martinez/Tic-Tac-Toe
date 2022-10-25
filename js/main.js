@@ -30,6 +30,7 @@ cells.map((cell) => {
             } else if (cell.innerHTML == "O" && interruptor == false) {
                 cell.innerHTML = "";
                 turnos++;
+                console.log(turnos)
             }
         }
 
