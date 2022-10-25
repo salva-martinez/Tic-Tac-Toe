@@ -1,3 +1,4 @@
+//array multidimentional[[""]]//
 const winConditions = [
     [0, 1, 2],
     [3, 4, 5],
@@ -11,7 +12,9 @@ const winConditions = [
 
 let interruptor = true;
 let jugador1pieza = "X";
+let player1 = sessionStorage.getItem("player1");
 let jugador2pieza = "O";
+let player2 = sessionStorage.getItem("player2");
 let cells = Array.from(document.getElementsByClassName("cell"))
 let turnos = 12;
 let gameOver = false;
@@ -75,6 +78,3 @@ const ganar = () => {
         };
     };
 };
-
-
-
