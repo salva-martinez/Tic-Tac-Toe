@@ -55,6 +55,7 @@ button {
     transition: 0.8s;
     border: purple;
     border-radius: 15px 15px 15px 15px;
+    text-shadow: 0px 0px 10px lime, 0px 0px 30px lime, 0px 0px 50px lime, 0px 0px 70px lime;
 }
 
 button:hover {
@@ -80,6 +81,7 @@ p {
     color: yellowgreen;
     text-decoration: none;
     justify-content: center;
+    text-shadow: 0px 0px 10px lime, 0px 0px 30px lime, 0px 0px 50px lime, 0px 0px 70px lime;
 }
 
 .footer-menu {
@@ -93,9 +95,19 @@ p {
     color: yellowgreen;
     text-decoration: none;
     justify-content: center;
+    text-shadow: 0px 0px 10px lime, 0px 0px 30px lime, 0px 0px 50px lime, 0px 0px 70px lime;
 }
 
 footer {
     margin-top: 36rem;
     position: absolute;
+}
+
+.turn-text {
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    text-shadow: 0px 0px 10px lime, 0px 0px 30px lime, 0px 0px 50px lime, 0px 0px 70px lime;
 }

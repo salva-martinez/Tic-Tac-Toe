@@ -7,3 +7,4 @@ function setName() {
     sessionStorage.setItem("player1", name1);
     sessionStorage.setItem("player2", name2);
 };
+

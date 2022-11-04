@@ -31,6 +31,7 @@ cells.map((cell) => {
                 cell.innerHTML = "";
                 turnos++;
                 console.log(turnos)
+                console.log(interruptor)
             }
         }
 
@@ -43,16 +44,17 @@ cells.map((cell) => {
 
             }
         }
+        printName()
         ganar ()
 
     })
 
 });
 
-const restartbutton = document.getElementById("restartbtn")
-restartbutton.addEventListener("click", () => {
-    restart ();
-});
+// const restartbutton = document.getElementById("restartbtn")
+// restartbutton.addEventListener("click", () => {
+//     restart ();
+// });
 
 const restart = () => {
     cells.forEach(cell => {
@@ -74,8 +76,26 @@ const ganar = () => {
         }
         else if (cell1 == cell2 && cell2 == cell3) {
             console.log("WINNER");
+            saveWinner();
             restart();
             window.location.href = "../pages/winner.html"
         };
     };
 };
+
+function printName(){
+
+    if(interruptor){
+        document.getElementById("turn-time").innerHTML = sessionStorage.getItem("player1")
+    } else{
+        document.getElementById("turn-time").innerHTML = sessionStorage.getItem("player2")
+    }
+    
+}
+
+
+
+function saveWinner(){
+    sessionStorage.setItem("turnoganador", interruptor);
+}
+printName()

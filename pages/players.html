@@ -14,15 +14,17 @@
 <body>
 
     <div class="container-fluid">
-        <div class="row">
-            <div class="col">
+        <div class="row-fluid">
+            <div class="col-fluid">
                 <div class="player-content">
-                    <h1 class="main-text">Choose your fighter</h1>
                     <h3 class="choose">Select your player</h3>
                     <section id="0">
                         <div class="selectioner">
                             <label>
-                                <input type="radio" name="value" id="p0" class="player1"> Player 1
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                                    <label class="form-check-label" for="flexSwitchCheckDefault">Player 1</label>
+                                </div>
                                 <input type="text" class="text1" id="player1" placeholder="Ex: Isidro">
                             </label>
                         </div>
@@ -30,7 +32,10 @@
                     <section>
                         <div class="selectioner2">
                             <label>
-                                <input type="radio" name="value" id="p0">Player 2
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                                    <label class="form-check-label" for="flexSwitchCheckDefault">Player 2</label>
+                                </div>
                                 <input type="text" class="text2" id="player2" placeholder="Ex: Estruch">
                             </label>
                         </div>
@@ -39,13 +44,18 @@
                 <div class="cpu-content">
                     <h3 class="cpuText">If you are alone</h3>
                     <section class="selectioner-cpu">
-                        <input type="radio" name="value" id="p0" class="input-cpu">CPU: C3PO <img
-                            src="../images/C-3PO_TLJ_Card_Trader_Award_Card.webp" alt="">
+                        <div class="form-check form-switch">
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDisabled" disabled>
+                                <label class="form-check-label" for="flexSwitchCheckDisabled">Coming soon...</label>
+                            </div></label>
+                        </div><img src="../images/C-3PO_TLJ_Card_Trader_Award_Card.webp" alt="">
                     </section>
                 </div>
             </div>
             <div>
-                <button onclick="setName()" class="main-btn"><a href="./game.html" class="play-btn">Play Game</a></button>
+                <button onclick="setName()" class="main-btn"><a href="./game.html" class="play-btn">Play
+                        Game</a></button>
             </div>
         </div>
     </div>
