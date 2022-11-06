@@ -1,11 +1,8 @@
-:root {
-    --purple: #b64ef2;
-    --winning-blocks: #2d414b;
-}
-
 p {
-    color: var(--purple);
     font-size: larger;
+    text-shadow: 0px 0px 10px lime, 0px 0px 30px lime, 0px 0px 50px lime, 0px 0px 70px lime;
+    margin-top: 6rem;
+    color: darkgreen;
 }
 
 h5 {
@@ -14,18 +11,13 @@ h5 {
 
 button {
     display: flex;
-    padding: 10px 20px;
-    border-radius: 10px;
-    font-size: 20px;
+    width: 5rem;
+    color: white;
     text-decoration: none;
-    background-color: #b64ef2;
-}
-
-a {
-    color: var(--purple);
-    background-color: #b64ef2;
+    justify-content: center;
+    text-shadow: 0px 0px 10px lime, 0px 0px 30px lime, 0px 0px 50px lime, 0px 0px 70px lime;
 }
 
 body {
-    background-color: black;
+    background-image: url(https://w0.peakpx.com/wallpaper/336/241/HD-wallpaper-black-chip-abstract-board-circuit-cpu-dark-electronics-gpu-thumbnail.jpg);
 }

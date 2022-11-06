@@ -1,4 +1,4 @@
-//array multidimentional[[""]]//
+
 const winConditions = [
     [0, 1, 2],
     [3, 4, 5],
@@ -51,10 +51,10 @@ cells.map((cell) => {
 
 });
 
-// const restartbutton = document.getElementById("restartbtn")
-// restartbutton.addEventListener("click", () => {
-//     restart ();
-// });
+const restartbutton = document.getElementById("restartbtn")
+restartbutton.addEventListener("click", () => {
+    restart ();
+});
 
 const restart = () => {
     cells.forEach(cell => {
@@ -86,9 +86,9 @@ const ganar = () => {
 function printName(){
 
     if(interruptor){
-        document.getElementById("turn-time").innerHTML = sessionStorage.getItem("player1")
+        document.getElementById("turn-time").innerHTML = `It's turn of: ${sessionStorage.getItem("player1")}`
     } else{
-        document.getElementById("turn-time").innerHTML = sessionStorage.getItem("player2")
+        document.getElementById("turn-time").innerHTML = `It's turn of: ${sessionStorage.getItem("player2")}`
     }
     
 }
@@ -99,3 +99,15 @@ function saveWinner(){
     sessionStorage.setItem("turnoganador", interruptor);
 }
 printName()
+
+// const blockGame = () => {
+//     let player1Name = sessionStorage.getItem("player1");
+//     let player2Name = sessionStorage.getItem("player2");
+
+//     if (player1Name == "" || player2Name == ""){
+//         alert("Indicar los nombres es obligatorio")
+    
+//     }
+// }
+
+// blockGame();

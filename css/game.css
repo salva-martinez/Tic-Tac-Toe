@@ -1,6 +1,5 @@
-:root {
-    --purple: #b64ef2;
-    --all: #2d414b;
+body{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.8),rgb(13, 228, 218));
 }
 
 h1 {
@@ -19,6 +18,7 @@ h1 {
     align-items: center;
     flex-direction: column;
     background-image: url(https://c4.wallpaperflare.com/wallpaper/260/76/893/abstract-circuit-computer-detail-wallpaper-preview.jpg);
+    background-size: cover;
     font-family: 'Times New Roman', Times, serif;
 }
 
