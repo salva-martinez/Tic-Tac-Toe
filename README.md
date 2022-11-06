@@ -25,16 +25,12 @@ html5, css, js y bootstraps5.
 
 Imagenes del juego
 
-main:
 ![Captura de pantalla 2022-11-06 231833](https://user-images.githubusercontent.com/114058655/200198303-2e59018c-b238-4927-a847-ee21fb255491.png)
 
-jugadores:
 ![Captura de pantalla 2022-11-06 231854](https://user-images.githubusercontent.com/114058655/200198313-1ad9550f-7b43-46ab-ab43-28c48005494e.png)
 
-panel de juego:
 ![Captura de pantalla 2022-11-06 231944](https://user-images.githubusercontent.com/114058655/200198323-38a93e75-5052-4470-9c18-cabeedce1621.png)
 
-victoria:
 ![Captura de pantalla 2022-11-06 232025](https://user-images.githubusercontent.com/114058655/200198337-084e77db-616f-4639-8753-ee4bac690a88.png)
 
 
