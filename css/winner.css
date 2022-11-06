@@ -19,5 +19,7 @@ button {
 }
 
 body {
+    background-size: cover;
+    background-repeat: no-repeat;
     background-image: url(https://w0.peakpx.com/wallpaper/336/241/HD-wallpaper-black-chip-abstract-board-circuit-cpu-dark-electronics-gpu-thumbnail.jpg);
 }
